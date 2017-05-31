@@ -1,19 +1,168 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head> 
 		<title> Gemesh Banget Website</title>
+		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		
+  			<link href="css/bootstrap.css" rel="stylesheet">
+  			
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<style>
+    		/* Remove the navbar's default margin-bottom and rounded borders */ 
+    		.navbar {
+      		margin-bottom: 0;
+      		border-radius: 0;
+   	 		}
+    
+    		/* Add a gray background color and some padding to the footer */
+    		footer {
+      		background-color: #f2f2f2;
+      		padding: 25px;
+    		}
+    
+  			.carousel-inner img {
+      		width: 100%; /* Set width to 100% */
+      		margin: auto;
+      		min-height:200px;
+  			}
+
+  			/* Hide the carousel text when the screen is less than 600 pixels wide */
+  			@media (max-width: 600px) {
+    		.carousel-caption {
+      		display: none; 
+    			}
+  			}
+  			</style>
 	</head>
 	
-	<body style="margin-bottom:0px; padding:0px;">
-		<div class="header" style="background-color:teal; width:100%; height:100px; margin-bottom:-30px;">
-			<p style="color:white;font-size:50px;"> Header </p>
+	<body>
+			<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Logo</a>
+		    </div>
+		    
+		     
+		       <form class="navbar-form navbar-left">
+			      <div class="form-group">
+			        <input type="text" class="form-control" placeholder="Search">
+			      </div>
+			      <button type="submit" class="btn btn-default">search</button>
+			    </form>
+		    </div>
+		  </nav>
+		  <nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Home</a></li>		      
+		      <li><a href="#">Strategy</a></li>
+		      <li><a href="#">Adventure</a></li>
+		      <li><a href="#">Puzzle</a></li>
+		      <li><a href="#">Fantasy</a></li>
+		      <li><a href="#">Platform</a></li>
+		      <li><a href="#">Sports</a></li>
+		      <li><a href="#">Racing</a></li>
+		      <li><a href="#">Simulator</a></li>
+		    </ul>
+		    
+		  </div>
+		</nav>
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:20px;">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		    </ol>
+		
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      <div class="item active">
+		        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+		        <div class="carousel-caption">
+		          <h3>Sell $</h3>
+		          <p>Money Money.</p>
+		        </div>      
+		      </div>
+		
+		      <div class="item">
+		        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+		        <div class="carousel-caption">
+		          <h3>More Sell $</h3>
+		          <p>Lorem ipsum...</p>
+		        </div>      
+		      </div>
+		    </div>
+		
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
 		</div>
-		<div class="body" style="background-color:gray; width:100%; height:550px; margin-bottom:-30px;">
-			<p style="color:orange;font-size:50px;"> Body </p>
-		</div>
-		<div class="footer" style="background-color:teal; width:100%;">
-			<p style="color:white;font-size:50px;"> Footer bawah banget </p>
-		</div>
+		  
+		<div class="container text-center">    
+		  <h3>What We Do</h3><br>
+		  <div class="row">
+		    <div class="col-sm-4">
+		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+		      <p>Current Project</p>
+		    </div>
+		    <div class="col-sm-4"> 
+		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+		      <p>Project 2</p>    
+		    </div>
+		    <div class="col-sm-4">
+		      <div class="well">
+		       <p>Some text..</p>
+		      </div>
+		      <div class="well">
+		       <p>Some text..</p>
+		      </div>
+		    </div>
+		  </div>
+		</div><br>
+		
+		<footer class="container-fluid text-center">
+		<div class="col-sm-6">
+		  <p style="font-size:small; color:black;font-family:comic sans;text-align:left;">About Us</p>
+			  <p style="font-size:12px; text-align:justify;"> Lorexm ipsum dolor sit amet, consectetur adipiscing elit. 
+			  Phasellus eu libero quis lorem ullamcorper cursus vitae eu nisi. 
+			  Cras quam enim, interdum ut suscipit non, elementum a tortor. 
+			  Donec nec risus at elit convallis tempus mattis eu nulla. Nullam rutrum nulla sit amet neque convallis, 
+			  a luctus elit fringilla. In mattis, lacus non egestas fringilla, 
+			  justo nibh faucibus massa, non commodo mi dui et sapien. Morbi rhoncus posuere venenatis. 
+			  Etiam ante ipsum, interdum nec volutpat sed, molestie ac dui. 
+			  Suspendisse accumsan nibh et dolor mattis tempus. 
+			  Nam bibendum risus vitae lacus sodales, nec tempus nulla consectetur. 
+			  Vestibulum ac urna id tellus ullamcorper aliquet eu ut risus. 
+			  Sed porttitor urna vel sollicitudin blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+			  Nam eget feugiat lectus, vitae tristique nisl. Duis sapien eros, dignissim ac auctor nec, dictum eget sem. </p>
+			  </div>
+		  <div class="col-sm-6">
+		    <p style="font-size:small; color:black;text-align:left;font-family:'Comic Sans MS';">Games at Gemesh.com</p>
+		    <p style="font-size:12px; text-align:justify;"> Maecenas quis laoreet justo, quis tempus ante. 
+		    Phasellus blandit enim sit amet nunc varius pharetra sed eu velit. 
+		    Nulla facilisi. Etiam ac pretium magna. Vestibulum a posuere arcu, vitae posuere nunc. 
+		    In venenatis consequat commodo. Fusce convallis ex at placerat rhoncus. 
+		    Aliquam at sapien libero. Cras suscipit risus felis, vestibulum efficitur erat mattis vel. 
+		    Praesent et tempus nibh. Aenean finibus tellus et ipsum convallis, sit amet pharetra odio ornare. </p>		  
+		    </div>
 
+		</footer>
+		
+		
 	</body>
 </html>
